@@ -1,0 +1,128 @@
+:root{
+    --fundo: #1C1C1C;
+    --texto: #00BFFF;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto);
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--fundo);
+}
+
+#container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    #mais{
+        height: auto;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 20vh;
+
+    }
+
+    body{
+        flex-direction: column;
+    }
+    #graficog {
+        max-width: 300px;
+        height: 200px;
+        display: none;
+    }
+
+    p{
+        font-size: 3.3vw;
+        margin: 5px;
+        margin-top: 2vh;
+    }
+
+    #largura{
+        width: 40vw;
+    }
+
+    h1{
+        font-size: 5vw;
+    }
+
+    #grafico {
+        width: 100%; /* Largura do canvas igual à largura da div */
+        height: auto; /* Altura do canvas ajustada automaticamente */
+        
+    }
+}
+
+@media (min-width: 768px) {
+
+    #largura{
+        width: 20vw;
+    }
+
+    #graficog {
+        max-width: 900px;
+        width: 600px;
+        height: 300px;
+     
+    }
+
+    p{
+        font-size: 1.2vw;
+        margin: 20px;
+    }
+
+    .d{
+        font-size: 2.8vw;
+    }
+
+    h1{
+        font-size: 3vw;
+    }
+
+    #grafico {
+        width: 100%; /* Largura do canvas igual à largura da div */
+        height: auto; /* Altura do canvas ajustada automaticamente */
+    }
+
+    #mais{
+        height: auto;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 130px;
+    }
+}
+
+
+
+
